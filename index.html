@@ -1,13 +1,407 @@
 <!doctype html>
 <html>
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/dist/output.css" rel="stylesheet">
 </head>
+
 <body>
-  <h1 class="text-3xl font-bold underline">
-    inicio con tailwind
-  </h1>
+  <header class="text-gray-600 body-font">
+    <div class="flex justify-center bg-cover bg-wood-image">
+      <nav class="self-center w-full max-w-7xl">
+        <div class="flex flex-col lg:flex-row justify-around items-center border-b-2">
+          <h1 class="uppercase pl-5 py-4 text-xl font-sans font-bold">Alasitas</h1>
+          <ul class="hidden lg:flex items-center text-[18px] font-semibold pl-32">
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5">
+              <a href="#">Inicio</a>
+            </li>
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5">
+              <a href="#">Contacto</a>
+            </li>
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5">
+              <a href="#">Servicios</a>
+            </li>
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5">
+              <a href="#">Acerca de</a>
+            </li>
+            <li class="hover:underline underline-offset-4 decoration-2 decoration-black py-2 rounded-lg px-5">
+              <a href="cotizacion.html">Cotizacion</a>
+            </li>
+          </ul>
+          <div class="text-center text-base pr-5 inline-flex">
+            <a href="#" class="w-8 h-8 inline-block rounded-full pt-[6px] hover:text-blue-500">
+              <i class="fa fa-twitter"></i>
+            </a>
+            <a href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500">
+              <i class="fa fa-instagram"></i>
+            </a>
+            <a href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500">
+              <i class="fa fa-facebook"></i>
+            </a>
+            <a href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500">
+              <i class="fa fa-google"></i>
+            </a>
+            <a href="#" class="w-8 h-8 inline-block rounded-full pt-[5px] hover:text-blue-500">
+              <i class="fa fa-linkedin"></i>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="flex justify-center bg-cover bg-wood-image">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col max-w-7xl justify-center items-center space-y-3 w-full">
+          <div class="flex flex-col md:items-start items-center justify-center space-y-3 px-8 text-center">
+            <div class="text-3xl md:text-7xl font-bold">
+              Haz que tus proyectos de carpintería sean más encantadores
+            </div>
+          </div>
+          <div class="flex flex-col lg:flex-row space-x-2 space-y-3 md:space-x-6   w-full items-center justify-center ">
+
+            <div class="lg:w-40 w-64 h-40  overflow-hidden rounded-xl ">
+              <img src="imagens/img1.jpg" alt="" class="" />
+            </div>
+            <div class="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center">
+              <div class="w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
+                <img src="imagens/img2.jpg" alt="" class="" />
+              </div>
+              <div class="w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
+                <img src="imagens/img4.jpg" alt="" class="" />
+              </div>
+            </div>
+            <div class="lg:w-60 w-64 h-96  overflow-hidden rounded-xl ">
+              <img src="imagens/img1.jpg" alt="" class="" />
+            </div>
+            <div class="flex flex-row lg:flex-col space-x-3 space-y-6 items-center justify-center ">
+              <div class="w-32 lg:w-40 h-48  overflow-hidden rounded-xl ">
+                <img src="imagens/img5.jpg" alt="" class="" />
+              </div>
+              <div class="w-32 lg:w-40 h-32  overflow-hidden rounded-xl ">
+                <img src="imagens/img6.jpg" alt="" class="" />
+              </div>
+            </div>
+            <div class="lg:w-40 w-64 h-40  overflow-hidden rounded-xl ">
+              <img src="imagens/img7.jpg" alt="" class="" />
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://use.fontawesome.com/03f8a0ebd4.js"></script>
+    <style>
+      .bg-wood-image {
+        background-image: url('ruta-de-tu-imagen-de-madera.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+
+  </header>
+
+  <main>
+
+    <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full mb-20">
+          <h1 class="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">Historia</h1>
+        </div>
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+          <div class="lg:w-4/6 mx-auto">
+            <div class="rounded-lg h-64 overflow-hidden">
+              <img alt="content" class="object-cover object-center h-full w-full" src="imagens/logohistoria.jpg">
+            </div>
+            <div class="flex flex-col sm:flex-row mt-10">
+              <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                <div class="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
+                  <img fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10" viewBox="0 0 24 24" src="imagens/img.jpg">
+                    <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                  <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Alasitas</h2>
+                  <div class="w-12 h-1 bg-blue-500 rounded mt-2 mb-4"></div>
+                  <p class="text-base">La fiesta de Alasitas es una tradición de la ciudad de La Paz. Se remonta a antiguas tradiciones Aymaras que después de la colonia se convirtieron en prácticas religiosas, respondiendo a ese habitual sincretismo que caracteriza a los ritos y costumbres de América Latina.  En realidad, inicialmente el dios precolombino Ekeko de la fiesta estaba desnudo, pero los españoles lo vistieron con ropa de los mestizos.</p>
+                </div>
+              </div>
+              <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                <p class="leading-relaxed text-lg mb-4">	
+                   
+                
+                    Alasitas, que en Aymara significa “cómprame”, es una feria en la cual originalmente los indígenas intercambiaban miniaturas, productos agrícolas, piedras circulares de colores o con alguna particularidad. El intercambio se practicaba con alegría y con la esperanza de tener, durante el año, los productos adquiridos. 
+                
+                
+                    Alasita es una gran fiesta de deseos y aspiraciones. La tradición establece que uno compre una miniatura de lo que más le haga falta en el año que cursa. Es necesario asistir a la feria al medio día y que un yatiri (hechicero y curandero) ch'alla (bendiga) las mismas, además los asistentes a la Alasita pasan por la Iglesia más cercana o de su preferencia para hacer bendecir las miniaturas que han comprado. También funcionaría si las miniaturas le son regaladas a uno para que, por arte de magia, se hagan realidad.</p>
+                <a class="text-blue-500 inline-flex items-center">Learn More
+                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-wrap w-full mb-20">
+            <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">24 de enero: Celebración de la Alasita</h1>
+              <div class="h-1 w-20 bg-indigo-500 rounded"></div>
+            </div>
+            <p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Cada 24 de enero los Pueblos Aymara y Quechua celebran la Fiesta de Alasita o de la Abundancia en el Estado plurinacional de Bolivia. La misma refiere al deseo, anhelo o esperanza de obtener bienes materiales o inmateriales en el año presente.</p>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <div class="flex items-center justify-center">
+      <div class="h-36 w-[90%] flex items-center justify-center md:text-4xl text-2xl lg:text-5xl font-bold ">Productos
+      </div>
+    </div>
+    <div class="flex justify-center">
+      <div class="flex flex-col lg:flex-row items-center max-w-7xl w-[90%] m-4">
+        <div style="background-image: url(imagens/ekeko.jpg)"
+          class="bg-no-repeat bg-cover bg-center lg:bg-left flex flex-col w-[90%] lg:w-[40%] h-96 m-2 brightness-110 hover:brightness-90 ">
+          <div class="absolute inset-0 bg-gray-900 bg-opacity-50">
+            <div class="flex flex-col items-center justify-center p-2 text-gray-300">
+              <div class="font-bold text-lg m-2 mt-[30%]"><a href="">El EKEKO</a></div>
+              <div class="m-2 text-sm"><a href=""> Amuleto o Illa principal de la Feria de Alasita. Es considerado como un ser que provee fertilidad, abundancia y dicha. Este Dios de la abundancia está encarnado en un hombre de baja estatura con prominente barriga y un simpático bigote. Viste un ll’uchu o gorra de lana, un sombrero, saco y abarcas, y lleva en sus espaldas un cargamento de alimentos, instrumentos musicales y maletas con dinero, entre otros productos.</a></div>
+            </div>
+
+          </div>
+        </div>
+        <div style="background-image: url(imagens/artesania.jpg)"
+          class="bg-no-repeat bg-cover bg-center lg:bg-left flex flex-col w-[90%] lg:w-[40%] h-96 m-2 brightness-110 hover:brightness-90 ">
+          <div class="absolute inset-0 bg-gray-900 bg-opacity-50">
+            <div class="flex flex-col items-center justify-center p-2 text-gray-300">
+              <div class="font-bold text-lg m-2 mt-[30%]"><a href="">Artesania</a></div>
+              <div class="m-2 text-sm"><a href=""> Entre las miniaturas que se encuentran en la feria de Alasita resaltan todo tipo de productos alimenticios para abastecer el hogar, maletas, billetes, pasaportes, visas, pasajes de avión, amuletos para el amor, materiales de construcción, casas, vehículos y una infinidad de productos que capturan la atención de la población y sus creyentes</a></div>
+            </div>
+
+          </div>
+        </div>
+        <div style="background-image: url(imagens/billetes.jpg)"
+          class="bg-no-repeat bg-cover bg-center lg:bg-left flex flex-col w-[90%] lg:w-[40%] h-96 m-2 brightness-110 hover:brightness-90 ">
+          <div class="absolute inset-0 bg-gray-900 bg-opacity-50">
+            <div class="flex flex-col items-center justify-center p-2 text-gray-300">
+              <div class="font-bold text-lg m-2 mt-[30%]"><a href="">Billetitos</a></div>
+              <div class="m-2 text-sm"><a href="">Son réplicas casi exactas pero en miniatura de cortes mercantiles de bolivianos, dólares y euros emitidos por el imaginario Banco de la Fortuna o de la Alasita. Su significado está asociado a la creencia de que no debe faltar dinero en la billetera durante todo el año</a></div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <div class="flex items-center justify-center">
+      <div class="h-36 w-[90%] flex items-center justify-center md:text-4xl text-2xl lg:text-5xl font-bold ">Nuestras
+        Metas Este Mes</div>
+    </div>
+
+    <div class="flex flex-col  justify-center items-center ">
+      <div class="overflow-hidden w-full md:w-3/4 m-4 flex flex-col justify-center    rounded-xl">
+
+        <div class="flex flex-col md:flex-row items-center justify-center   ">
+          <div class="  items-center justify-center flex py-2">
+            <div class="flex flex-col  items-center justify-center text-center">
+
+              <div class="text-stone-600 m-2 px-8 text-xl font-bold text-3xl">
+                En Carpintería RoMa, hemos avanzado mucho este mes.
+                Nuestros talentosos artesanos han creado muebles excepcionales que combinan calidad y estilo.
+                Cada pieza es única y está diseñada para brindar comodidad y belleza a tu hogar.
+                ¡Estamos orgullosos de nuestro progreso y emocionados por lo que vendrá!
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="flex items-center justify-center">
+      <div class="flex-col items-center justify-center ">
+        <div class="flex">
+          <div
+            class="flex lg:flex-row flex-col p-4 space-x-4 space-y-4 max-w-7xl justify-around w-full h-auto lg:h-60 items-center ">
+            <div
+              class="border rounded h-40 w-[100%] md:w-72 flex items-center justify-center ml-4 lg:px-0 px-6 bg-white shadow-xl md:mt-4">
+              <div class="flex-col space-y-2 items-center px-0 md:px-6">
+                <div class="flex items-center justify-between space-x-6">
+                  <div class="flex items-center space-x-1 ">
+                    <div class="text-lg font-medium text-violet-500"><ion-icon
+                        name="chatbubble-ellipses-outline"></ion-icon></div>
+                    <div class="text-sm font-medium text-gray-500">Respuestas</div>
+                  </div>
+                  <div class="text-xs bg-gray-200 px-2 py-0.5 rounded-2xl text-gray-400 font-medium">30 Días</div>
+                </div>
+                <div class="text-3xl font-bold">1427</div>
+                <div class="font-bold text-red-500 flex items-center space-x-1">
+                  <div class="text-xl"><ion-icon name="trending-down-outline"></ion-icon></div>
+                  <div class="text-sm">2.5% menos</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border rounded h-40 w-[100%] md:w-72 flex items-center justify-center ml-4 lg:px-0 px-6 bg-white shadow-xl">
+              <div class="flex-col space-y-2 items-center px-0 md:px-6">
+                <div class="flex items-center justify-between space-x-6">
+                  <div class="flex items-center space-x-1 ">
+                    <div class="text-lg font-medium text-violet-500"><ion-icon name="briefcase-outline"></ion-icon>
+                    </div>
+                    <div class="text-sm font-medium text-gray-500">Proyectos</div>
+                  </div>
+                  <div class="text-xs bg-gray-200 px-2 py-0.5 rounded-2xl text-gray-400 font-medium">30 Días</div>
+                </div>
+                <div class="text-3xl font-bold">127</div>
+                <div class="font-bold text-green-500 flex items-center space-x-1">
+                  <div class="text-xl"><ion-icon name="trending-up-outline"></ion-icon></div>
+                  <div class="text-sm">4.9% más</div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="border rounded h-40 w-[100%] md:w-72 flex items-center justify-center ml-4 lg:px-0 px-6 bg-white shadow-xl">
+              <div class="flex-col space-y-2 items-center px-0 md:px-6">
+                <div class="flex items-center justify-between space-x-6">
+                  <div class="flex items-center space-x-1 ">
+                    <div class="text-lg font-medium text-violet-500"><ion-icon name="document-outline"></ion-icon></div>
+                    <div class="text-sm font-medium text-gray-500">Reportes</div>
+                  </div>
+                  <div class="text-xs bg-gray-200 px-2 py-0.5 rounded-2xl text-gray-400 font-medium">30 Días</div>
+                </div>
+                <div class="text-3xl font-bold">456</div>
+                <div class="font-bold text-green-500 flex items-center space-x-1">
+                  <div class="text-xl"><ion-icon name="trending-up-outline"></ion-icon></div>
+                  <div class="text-sm">3.7% más</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/290d4f0eb4.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+  </main>
+  <footer>
+    <div class="flex items-center justify-around">
+      <div class="m-2 items-start relative w-full flex flex-row justify-between mt-8 ml-8 mr-8 max-w-7xl">
+        <div class="relative">
+          <div class="bg-white p-3 space-y-10 md:grid md:grid-cols-2 md:-mt-6 lg:grid-cols-4">
+            <div class="w-1/2 md:ml-24 md:mt-9 md:w-3/4">
+              <h1 class="text-blue-600 text-xl font-medium">Carpintería RoMa</h1> <br />
+              <p class="text-gray-500 font-medium text-base hover:text-blue-600">
+                A123 Calle Perdida <br />
+                Ciudad, CP 535022 <br /> País </p> <br />
+              <p class="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer">
+                <strong class="tracking-wide text-blue-600 font-normal">Teléfono:</strong> +91 7008090111
+              </p>
+              <p class="text-gray-500 font-medium text-base hover:text-blue-600 cursor-pointer">
+                <strong class="tracking-wide text-blue-600 font-normal">Email:</strong> info@carpinteriaroma.com
+              </p>
+            </div>
+            <div class="leading-9 md:w-2/4 md:order-3 md:ml-24">
+              <h1 class="text-blue-600 text-xl font-medium tracking-[0.030rem]"> Enlaces Útiles </h1>
+              <ul class="mt-2 text-gray-500 font-medium">
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Inicio</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Nosotros</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Servicios</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Términos de servicio</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Política de privacidad</a> </li>
+              </ul>
+            </div>
+            <div class="leading-9 md:w-3/4 md:order-4">
+              <h1 class="text-blue-600 text-xl font-medium tracking-[0.030rem]"> Nuestros Servicios </h1>
+              <ul class="mt-2 text-gray-500 font-medium">
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Muebles de Sala</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Cocina</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Dormitorio</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Puertas</a> </li>
+                <li> <i class="fa fa-chevron-right text-blue-600"></i> <a href="#" class="hover:text-blue-600">
+                    Baño</a> </li>
+              </ul>
+            </div>
+            <div class="md:order-2 lg:order-last">
+              <h1 class="text-blue-600 text-xl font-medium tracking-[0.030rem]"> Únete a nuestro Boletín </h1>
+              <br />
+              <p class="text-gray-500 font-medium w-3/5 leading-7 mb-5 md:w-3/4">
+                Únete a más de 25,000 personas y no te pierdas nuevos consejos, tutoriales y más.
+              </p>
+              <input type="email" placeholder="Ingresa tu correo electrónico"
+                class="py-1 px-2 placeholder-gray-400 rounded-tl-xl focus:outline-none focus:border md:w-1/2 lg:w-3/5 border" />
+              <button class="text-white bg-blue-600 p-1 -translate-x-1 rounded-br-xl hover:bg-blue-500">
+                Suscribirse
+              </button>
+            </div>
+          </div>
+          <div
+            class="md:flex hidden bg-gray-900 p-3 flex-col text-center pt-5 space-y-8 md:flex-row md:justify-between md:space-y-0">
+            <div
+              class="flex mx-3 justify-between space-x-20 md:flex-row text-gray-200 md:space-x-28 md:ml-20 lg:ml-24 lg:space-x-[13rem] xl:space-x-72 xl:ml-24">
+              <p>&copy; Derechos de Autor <strong>Carpintería RoMa.</strong> Todos los derechos reservados.</p>
+              <p>Diseñado por <span class="text-blue-600">TailwindCSS</span></p>
+            </div>
+            <div
+              class="text-white pb-4 text-center text-xl space-x-2 md:w-2/4 md:pb-0 md:pl-2 md:space-x-1 lg:pl-[171px] lg:space-x-2 xl:pl-44">
+              <a href="#"
+                class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200">
+                <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200">
+                <i class="fa fa-google"></i>
+              </a>
+              <a href="#"
+                class="w-8 h-8 bg-orange-500 hover:text-orange-500 inline-block rounded-full pt-[3px] hover:bg-gray-200">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </footer>
 </body>
+
 </html>
