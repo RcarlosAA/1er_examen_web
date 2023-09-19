@@ -1,0 +1,34 @@
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "cabeza cabeza cabeza cabeza"
+      "cabeza cabeza cabeza cabeza"
+      "izq tres cuatro cuatro"
+      "izq cinco cinco seis"
+      "izq siete ocho nueve"
+      "izq diez diez diez";
+  }
+  
+  .cabeza { grid-area: cabeza; }
+  
+  .izq { grid-area: izq; }
+  
+  .cuatro { grid-area: cuatro; }
+  
+  .tres { grid-area: tres; }
+  
+  .cinco { grid-area: cinco; }
+  
+  .seis { grid-area: seis; }
+  
+  .siete { grid-area: siete; }
+  
+  .ocho { grid-area: ocho; }
+  
+  .nueve { grid-area: nueve; }
+  
+  .diez { grid-area: diez; }
+  
