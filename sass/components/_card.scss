@@ -1,0 +1,55 @@
+@use 'sass:math';
+@use '../variables' as v;
+.card{
+    display: block;
+    //background-color: v.$secundary;
+    padding: v.$base-padding;
+    
+    border: v.$base-border-width solid v.$grey;
+    box-shadow: v.$base-box-shadow;
+    //division con la funcion math
+    border-radius: math.div(v.$base_border-radius, 2);
+    //border-radius: v.$base_border-radius;
+    /*.card-title{
+        font-size: v.$base-font-size;
+        padding-bottom: v.$base-padding;
+        font-weight: bold;
+    }
+    .car-body{
+        font-size: v.$base-font-size;
+        a{
+            text-decoration: underline;
+        }
+    }*/
+
+    //Specificity menor al anterior codigo 
+    &-title{
+        font-size: v.$font-size-lg;
+        padding-bottom: v.$base-padding;
+        font-weight: bold;
+    }
+    &-body{
+        font-size: v.$base-font-size;
+        a{
+            text-decoration: underline;
+        }
+    }
+}
+
+.card-image{
+    display: block;
+    padding: v.$base-padding;
+    border-radius: math.div(v.$base_border-radius, 2);
+    &-title{
+        font-size: v.$font-size-lg;
+        padding-bottom: v.$base-padding;
+        font-weight: bold;
+        text-align: center;
+    }
+    &-body{
+        font-size: v.$base-font-size;
+        a{
+            text-decoration: none;
+        }
+    }
+}
