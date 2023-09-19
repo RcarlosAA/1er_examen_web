@@ -4,173 +4,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uso de Sass</title>
-    <link rel="stylesheet" href="dist/css/styles.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet"></head>
+    <title>Cocina Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos_aerolinea.css">
+
+</head>
+<link rel="stylesheet" href="css/estilo_imagen.css">
+</head>
 
 <body>
-    <!--
-    <h1>HOLA MUNDO DESDE SASS</h1>
-    <a href="#">link de hola mundo desde Sass</a>
-    <p class="error">Mensaje de error</p>
-    <p class="notificacion">Mensaje de notificacion</p> 
-    <button class="button">No presionar el boton</button>-->
 
-        <nav>
-            <aside class="navbar">
-                <div class="logo">
-                    <h1>App</h1>
-                </div>
-                <div class="class menu-toggle-wrap">
-                    <input type="checkbox" class="btn-menu" id="btn-menu">
-                    <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
-                </div>
-                <h3>menu</h3>
+    <nav>
+        <aside class="navbar">
+            <div class="logo">
+                <img src="img/logo.png">
+            </div>
+            <div class="class menu-toggle-wrap">
+                <input type="checkbox" class="btn-menu" id="btn-menu">
+                <label for="btn-menu" class="material-icons menu-toggle">double_arrow</label>
+            </div>
+            <h3>MENU</h3>
+            <div class="menu">
+                <a href="index_air.html" class="button">
+                    <span class="material-icons">home</span>
+                    <span class="text">Inicio</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">airplanemode_active</span>
+                    <span class="text">Vuelos</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">hotel</span>
+                    <span class="text">Hoteles</span>
+                </a>
+                <a href="#" class="button">
+                    <span class="material-icons">description</span>
+                    <span class="text">Antes de viajar</span>
+                </a>
+                <a href="contactos.html" class="button">
+                    <span class="material-icons">email</span>
+                    <span class="text">Contactos</span>
+                </a>
+            </div>
+
+            <div class="flex">
                 <div class="menu">
                     <a href="#" class="button">
-                        <span class="material-icons">home</span>
-                        <span class="text">Home</span>
-                    </a>
-                    <a href="#" class="button">
-                        <span class="material-icons">group</span>
-                        <span class="text">Team</span>
-                    </a>
-                    <a href="#" class="button">
-                        <span class="material-icons">description</span>
-                        <span class="text">About</span>
-                    </a>
-                    <a href="#" class="button">
-                        <span class="material-icons">email</span>
-                        <span class="text">Contact</span>
+                        <span class="material-icons">settings</span>
+                        <span class="text">Configuracion</span>
                     </a>
                 </div>
+            </div>
 
-                <div class="flex">
-                    <div class="menu">
-                        <a href="#" class="button">
-                            <span class="material-icons">settings</span>
-                            <span class="text">Configuration</span>
-                        </a>
+        </aside>
+    </nav>
+
+    <header>
+        <div style="">
+            <img src="img/avion2.jfif" class="img_index" alt="Imagen de avión" width="100%" height="50%">
+            <div class="container" style="position: absolute; top: 20%; ">
+                <div class="titulo" style="float: right;">
+                    <h1>Revisa Nuestros vuelos</h1>
+                    <p>Estamos comprometidos a brindarle tranquilidad y hacer que su viaje sea más sencillo.</p>
+                    <p><a class="btn btn-lg btn-primary" href="#">Contactanos</a></p>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+
+    <!--
+<div class="container" style="position: absolute; top: 100%; ">
+        <div class="card" >
+            <h3 class="card-title">Reserve su vuelo </h3>
+            <p class="card-body">
+            <div class="row">
+                <h5>Ruta</h5>
+                <input class="br input_" id="input_" placeholder="Origen">
+                <input class="br input_" placeholder="Destino" >
+                <input class="br input_" placeholder="Pasajeros" type="number">
+            </div>
+            <div class="row">
+                <h5>Fecha</h5>
+                <input class="br input_" placeholder="Fecha Salida">
+                <input class="br input_" placeholder="Fecha Retorno">
+                <button class="btn-primary"> Buscar </button>
+            </div>
+
+            </p>
+        </div>
+    </div>
+     -->
+
+
+
+    <div class="container">
+        
+        <img src="img/logo.png" alt="" class="logo_">
+        <div class="row">
+            <h1 class="card-title">Carlos Airlines</h1>
+            
+        </div>
+        <div class="card">
+            <h3 class="card-title">Reserve su vuelo </h3>
+            <p class="card-body">
+            <div class="row">
+                <h5>Ruta</h5>
+                <input class="br input_" id="input_" placeholder="Origen">
+                <input class="br input_" placeholder="Destino">
+               
+            </div>
+            <div class="row">
+                <h5>Pasajeros</h5>
+                
+                <input class="br input_" placeholder="Pasajeros" type="number">
+            </div>
+            <div class="row">
+                <h5>Fecha</h5>
+                <input class="br input_" placeholder="Fecha Salida">
+                <input class="br input_" placeholder="Fecha Retorno">
+                <button class="btn-primary"> Buscar </button>
+            </div>
+
+            </p>
+        </div>
+
+        <!-- 
+<div class="row">
+            <div class="card col-xs-6 col-md-6 col-lg-6 br-none">
+                <div class="card-title">Listos para viajar </div>
+                <div class="card-body">
+                    Estamos comprometidos a brindarle tranquilidad y hacer que su viaje sea más sencillo.
+                    <button class="btn-primary"> Leer</button>
+                </div>
+            </div>
+            <div class="card col-xs-6 col-md-6 col-lg-6">
+
+            </div>
+        </div>
+        -->
+
+
+    </div>
+
+    <div class="row">
+        <div class="col-xs-1 col-md-1 col-lg-1 ">
+        </div>
+        <div class="col-xs-11 col-md-11 col-lg-11 ">
+            <h1>
+                Nuestros Destinos
+            </h1>
+            <div class="row">
+                <div class="col-xs-3 col-md-3 col-lg-3 ">
+                    <img src="img/lpb.webp" class="br-full" alt="">
+                    <h5 class="destinos"> La Paz</h5>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3 ">
+                    <img src="img/CBB.webp" class="br-full" alt="">
+                    <h5 class="destinos"> Cochabamba</h5>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3">
+                    <img src="img/SCZ.webp" class="br-full" alt="">
+                    <h5 class="destinos"> Santa Cruz</h5>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-3 ">
+                    <img src="img/UYU.webp" class="br-full" alt="">
+                    <h5 class="destinos"> Uyuni</h5>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="row">
+        <div class="col-xs-2 col-md-2 col-lg-2 ">
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6 ">
+            <h1>
+                Sobre Nosotros
+            </h1>
+            <p class="p_info">
+                En Carl Airlines, estamos comprometidos en proporcionar a nuestros pasajeros una experiencia de viaje
+                excepcional. Fundada en 1990, hemos crecido hasta convertirnos en una de las principales aerolíneas
+                internacionales. Nuestra pasión por el servicio al cliente, la seguridad y la innovación nos ha
+                permitido sobresalir en la industria de la aviación.
+            </p>
+
+
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 ">
+            <img src="img/CBB.webp" class="img_info">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-md-2 col-lg-2 ">
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 ">
+
+            <img src="img/CBB.webp" class="img_info">
+
+
+
+        </div>
+        <div class="col-xs-5 col-md-5 col-lg-5 ">
+            <h1>
+                Mision
+            </h1>
+            <p class="p_info">
+                Nuestra misión es conectar a las personas con el mundo de una manera segura, cómoda y eficiente. Estamos
+                dedicados a ofrecer vuelos de alta calidad, servicios confiables y comodidades excepcionales a nuestros
+                pasajeros. Valoramos la seguridad como nuestra prioridad número uno y nos esforzamos por proporcionar
+                experiencias de viaje inolvidables a todos nuestros clientes.
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-2 col-md-2 col-lg-2 ">
+        </div>
+        <div class="col-xs-6 col-md-6 col-lg-6 ">
+            <h1>
+                Vision
+            </h1>
+            <p class="p_info">
+                Nuestra visión es ser la aerolínea líder a nivel mundial, reconocida por su excelencia en servicio al
+                cliente, innovación tecnológica y sostenibilidad ambiental. Buscamos expandir nuestras rutas y flota
+                para llegar a más destinos y proporcionar a nuestros pasajeros una conectividad global sin problemas.
+                Además, nos comprometemos a reducir nuestro impacto ambiental y contribuir al desarrollo sostenible de
+                la industria de la aviación.
+
+            </p>
+
+
+        </div>
+        <div class="col-xs-4 col-md-4 col-lg-4 ">
+            <img src="img/CBB.webp" class="img_info">
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-xs-1 col-md-1 col-lg-1 ">
+        </div>
+        <div class="col-xs-11 col-md-11 col-lg-11 ">
+            <h1>
+                PROMOCIONES
+            </h1>
+            <div class="row">
+                <div class="col-xs-4 col-md-4 col-lg-4 promo_">
+                    <img src="img/CobijaVentana.webp" class="img_promociones" alt="">
+                    <div class="promo">
+                        <h5 class="destinos"> La Paz a Cobija</h5>
+                        <div class="promo_precio">
+                            777 Bs
+                        </div>
+                        <h5 style="text-align: center; padding: 1rem;">Precio Final ida y vuelta<br>
+                            * condiciones y servicios
+                        </h5>
+
+                        <button class="btn-secundary" style="padding: 1rem; align-items: center;">
+                            Comprar YA!
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xs-4 col-md-4 col-lg-4 promo_">
+                    <img src="img/GYA.webp" class="img_promociones" alt="">
+                    <div class="promo">
+                        <h5 class="destinos">La Paz a Guayaramerin</h5>
+                        <div class="promo_precio">
+                            999 Bs
+                        </div>
+                        <h5 style="text-align: center; padding: 1rem;">Precio Final ida y vuelta<br>
+                            * condiciones y servicios
+                        </h5>
+
+                        <button class="btn-secundary" style="padding: 1rem; align-items: center;">
+                            Comprar YA!
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="col-xs-4 col-md-4 col-lg-4 promo_">
+                    <img src="img/TDD.webp" class="img_promociones" alt="">
+                    <div class="promo">
+                        <h5 class="destinos"> La Paz a Trinidad</h5>
+                        <div class="promo_precio">
+                            555 Bs
+                        </div>
+                        <h5 style="text-align: center; padding: 1rem;">Precio Final ida y vuelta<br>
+                            * condiciones y servicios
+                        </h5>
+
+                        <button class="btn-secundary" style="padding: 1rem; align-items: center;">
+                            Comprar YA!
+                        </button>
+
+
                     </div>
                 </div>
+   
 
-            </aside>
-        </nav>
 
-    <main class="container">
-
-        <h2> Cards </h2>
-        <div class="card">
-            <h1 class="card-title"> Titulo del card</h1>
-            <p class="card-body"> Cuerpo del card Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque
-                adipisci unde facere deserunt pariatur veniam voluptas fugiat omnis sapiente delectus! Nesciunt, commodi
-                omnis! Maiores, sunt perspiciatis mollitia aliquid reiciendis cumque. <a href="#">leer mas..</a> </p>
-
+            </div>
         </div>
-        <h2>Colores</h2>
-        <div class="text-primary">Texto de prueba </div>
-        <div class="text-secundary">Texto de prueba </div>
-        <div class="text-info">Texto de prueba </div>
-        <div class="text-error">Texto de prueba </div>
-        <div class="text-white">Texto de prueba </div>
-        <div class="text-black">Texto de prueba </div>
-        <h2> Fondo de colores</h2>
-        <div class="bg-primary">texto de prueba </div>
-        <div class="bg-secundary">texto de prueba </div>
-        <div class="bg-info">texto de prueba </div>
-        <div class="bg-error">texto de prueba </div>
-        <div class="bg-white">texto de prueba </div>
-        <div class="bg-black">texto de prueba </div>
-        <br>
-        <div class="bg-primary-dark-4">texto de prueba </div>
-        <div class="bg-primary-dark-3">texto de prueba </div>
-        <div class="bg-primary-dark-2">texto de prueba </div>
-        <div class="bg-primary-dark-1">texto de prueba </div>
+    </div>
 
-        <div class="bg-primary">texto de prueba </div>
 
-        <div class="bg-primary-light-1">texto de prueba </div>
-        <div class="bg-primary-light-2">texto de prueba </div>
-        <div class="bg-primary-light-3">texto de prueba </div>
-        <div class="bg-primary-light-4">texto de prueba </div>
 
-        <br>
-        <div class="bg-white-dark-4">texto de prueba </div>
-        <div class="bg-white-dark-3">texto de prueba </div>
-        <div class="bg-white-dark-2">texto de prueba </div>
-        <div class="bg-white-dark-1">texto de prueba </div>
-
-        <div class="bg-white">texto de prueba </div>
-
-        <h2>BOTONES</h2>
-
-        <a href="#" class="btn-primary text-white">Haz click</a>
-        <a href="#" class="btn-secundary text-white">Haz click</a>
-        <a href="#" class="btn-error text-white">Haz click</a>
-        <a href="#" class="btn-info text-white">Haz click</a>
-        <a href="#" class="btn-white text-black">Haz click</a>
-        <a href="#" class="btn-black text-white">Haz click</a>
-
-        <a href="#" class="btn-outline-primary text-primary">Haz click</a>
-        <a href="#" class="btn-outline-secundary text-secundary">Haz click</a>
-        <a href="#" class="btn-outline-error text-error">Haz click</a>
-        <a href="#" class="btn-outline-info text-info">Haz click</a>
-        <a href="#" class="btn-outline-white text-black">Haz click</a>
-        <a href="#" class="btn-outline-black text-black">Haz click</a>
-
-        <br>
-
-        <h1>borders</h1>
-
-        <button class="btn-primary text-white br-none ml-2">none</button>
-        <button class="btn-secundary text-white br-default ml-3">default</button>
-        <button class="btn-error text-white br-xs ml-4">xs</button>
-        <button class="btn-info text-white br-sm ml-2">sm</button>
-        <button class="btn-black text-white br-lg ml-2">lg</button>
-        <button class="btn-secundary text-white br-full ml-2 mt-3">full</button>
-
-        <br>
-
-        <h2 class="mb-2">Media Querys</h2>
-        <div class="resp-text">Texto Responsivo de Prueba</div>
-
-        <hr class="mt-4 mb-4">
-
-        <h2 class="mb-2">GRID</h2>
+    <div class="container">
         <div class="row">
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
-                </div>
+            <div class="col-xs-10 col-md-10 col-lg-10">
+                © 2023 Carl Airlines
             </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
-                </div>
-            </div>
-            <div class="col-xs-12 col-md-6 col-lg-3">
-                <div class="card">
-                    <h3 class="card-title">Articulo 1</h3>
-                    <p class="card-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis soluta aut facilis.</p>
-                </div>
+            <div class="col-xs-2 col-md-2 col-lg-2">
+                
+             
+                <span class="material-icons">airplanemode_active</span>
+                <span class="material-icons">airplanemode_active</span>
             </div>
         </div>
-    </main>
+       
+        </div>
+
+
+
+
+
 </body>
 
 </html>
